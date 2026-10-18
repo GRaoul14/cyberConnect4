@@ -1,0 +1,88 @@
+/* ===== Fenêtre principale ===== */
+.root {
+    -fx-background-color: #101827;
+    -fx-font-family: "Arial";
+}
+
+/* ===== Titre du jeu ===== */
+#titleLabel {
+    -fx-text-fill: #00e5ff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-padding: 20px;
+}
+
+/* ===== Plateau de jeu ===== */
+#boardGrid {
+    -fx-background-color: #172554;
+    -fx-padding: 20px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-alignment: center;
+}
+
+/* ===== Bouton Nouvelle partie ===== */
+#restartButton {
+    -fx-background-color: #00bcd4;
+    -fx-text-fill: #101827;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 25px;
+    -fx-cursor: hand;
+}
+
+#restartButton:hover {
+    -fx-background-color: #80deea;
+}
+
+
+.player-name {
+    -fx-text-fill: #101827;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.player-color {
+    -fx-text-fill: #101827;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Zone centrale */
+.center-container {
+    -fx-alignment: center;
+    -fx-spacing: 25px;
+    -fx-padding: 20px;
+}
+
+/* Panneaux des joueurs */
+.player-panel {
+    -fx-background-color: #7561d8;
+    -fx-background-radius: 15px;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+    -fx-pref-width: 130px;
+    -fx-pref-height: 250px;
+}
+
+/* Plateau */
+#boardGrid {
+    -fx-background-color: #172554;
+    -fx-padding: 15px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-alignment: center;
+}
+
+/* Bouton Nouvelle partie */
+#restartButton {
+    -fx-background-color: #00bcd4;
+    -fx-text-fill: #101827;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 25px;
+}
+
