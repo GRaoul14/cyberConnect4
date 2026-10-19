@@ -86,3 +86,141 @@
     -fx-padding: 10px 25px;
 }
 
+/* ===== Écran de victoire ===== */
+
+.victory-screen {
+    -fx-background-color: #0a0a18;
+    -fx-padding: 40px;
+}
+
+/* Trophée */
+
+.victory-trophy {
+    -fx-font-size: 80px;
+}
+
+/* Titre principal */
+
+.victory-title {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00ffff;
+}
+
+/* Nom du gagnant */
+
+.winner-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff00ff;
+}
+
+/* Message secondaire */
+
+.victory-subtitle {
+    -fx-font-size: 17px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Boutons */
+
+.victory-button {
+    -fx-background-color: #111b35;
+    -fx-text-fill: #00ffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-color: #00ffff;
+    -fx-border-width: 1.5px;
+    -fx-padding: 12px 35px;
+    -fx-cursor: hand;
+}
+
+.victory-button:hover {
+    -fx-background-color: #00ffff;
+    -fx-text-fill: #0a0a18;
+}
+
+/* ========================= */
+/*      MAIN MENU            */
+/* ========================= */
+
+.menu-root {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #080b18,
+        #111a30,
+        #080b18
+    );
+}
+
+.menu-title {
+    -fx-font-size: 62px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00eaff;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 234, 255, 0.8),
+        25,
+        0.5,
+        0,
+        0
+    );
+}
+
+.menu-subtitle {
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff3158;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(255, 49, 88, 0.7),
+        18,
+        0.5,
+        0,
+        0
+    );
+}
+
+.menu-tagline {
+    -fx-font-size: 13px;
+    -fx-text-fill: #a5b7d8;
+    -fx-letter-spacing: 3px;
+}
+
+.menu-button {
+    -fx-background-color: #111d35;
+    -fx-border-color: #00eaff;
+    -fx-border-width: 2px;
+    -fx-text-fill: #00eaff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 14px 25px;
+    -fx-cursor: hand;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #00eaff;
+    -fx-text-fill: #080b18;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 234, 255, 0.8),
+        18,
+        0.5,
+        0,
+        0
+    );
+}
+
+.menu-button:pressed {
+    -fx-background-color: #ff3158;
+    -fx-border-color: #ff3158;
+    -fx-text-fill: white;
+}
+
+.menu-footer {
+    -fx-font-size: 10px;
+    -fx-text-fill: #647899;
+}
+

@@ -5,15 +5,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 
 
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("/view/game.fxml"));
-			Scene scene = new Scene(root);
+			Parent root = FXMLLoader.load(getClass().getResource("/view/menu.fxml"));
+			Scene scene = new Scene(root, 800, 650);
 			scene.getStylesheets().add(getClass().getResource("/view/style.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Cyber Connect 4");

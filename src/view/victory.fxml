@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="25" styleClass="victory-screen" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VictoryController">
+
+    <Label styleClass="victory-trophy" text="🏆" />
+
+    <Label fx:id="victoryLabel" styleClass="victory-title" text="VICTOIRE !" />
+
+    <Label fx:id="winnerLabel" styleClass="winner-label" text="JOUEUR 1 A GAGNÉ !" />
+
+    <Label fx:id="subtitleLabel" styleClass="victory-subtitle" text="Bien joué !" />
+
+    <Button onAction="#replay" styleClass="victory-button" text="REJOUER" />
+
+    <Button onAction="#quit" styleClass="victory-button" text="QUITTER" />
+
+</VBox>
