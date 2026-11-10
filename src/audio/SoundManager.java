@@ -21,7 +21,7 @@ public class SoundManager {
         URL resource = SoundManager.class.getResource(path);
 
         if (resource == null) {
-            System.err.println("Son introuvable : " + path);
+            System.err.println("Audio not found : " + path);
             return null;
         }
 

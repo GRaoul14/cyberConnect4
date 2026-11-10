@@ -1,10 +1,12 @@
-/* ===== Fenêtre principale ===== */
+/* ===== Main Window ===== */
+
 .root {
     -fx-background-color: #101827;
     -fx-font-family: "Arial";
 }
 
-/* ===== Titre du jeu ===== */
+/* ===== Game Title ===== */
+
 #titleLabel {
     -fx-text-fill: #00e5ff;
     -fx-font-size: 28px;
@@ -12,7 +14,8 @@
     -fx-padding: 20px;
 }
 
-/* ===== Plateau de jeu ===== */
+/* ===== Game Board ===== */
+
 #boardGrid {
     -fx-background-color: #172554;
     -fx-padding: 20px;
@@ -21,18 +24,19 @@
     -fx-alignment: center;
 }
 
-/* ===== Bouton Nouvelle partie ===== */
-#restartButton {
+/* Game Button */
+
+.game-button {
     -fx-background-color: #00bcd4;
     -fx-text-fill: #101827;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
     -fx-background-radius: 8px;
-    -fx-padding: 10px 25px;
+    -fx-padding: 12px 35px;
     -fx-cursor: hand;
 }
 
-#restartButton:hover {
+.game-button:hover {
     -fx-background-color: #80deea;
 }
 
@@ -49,14 +53,16 @@
     -fx-font-weight: bold;
 }
 
-/* Zone centrale */
+/* Center Area */
+
 .center-container {
     -fx-alignment: center;
     -fx-spacing: 25px;
     -fx-padding: 20px;
 }
 
-/* Panneaux des joueurs */
+/* Player Panels */
+
 .player-panel {
     -fx-background-color: #7561d8;
     -fx-background-radius: 15px;
@@ -67,7 +73,8 @@
     -fx-pref-height: 250px;
 }
 
-/* Plateau */
+/* Game Board */
+
 #boardGrid {
     -fx-background-color: #172554;
     -fx-padding: 15px;
@@ -76,7 +83,8 @@
     -fx-alignment: center;
 }
 
-/* Bouton Nouvelle partie */
+/* New Game Button */
+
 #restartButton {
     -fx-background-color: #00bcd4;
     -fx-text-fill: #101827;
@@ -86,20 +94,20 @@
     -fx-padding: 10px 25px;
 }
 
-/* ===== Écran de victoire ===== */
+/* ===== Victory Screen ===== */
 
 .victory-screen {
     -fx-background-color: #0a0a18;
     -fx-padding: 40px;
 }
 
-/* Trophée */
+/* Trophy */
 
 .victory-trophy {
     -fx-font-size: 80px;
 }
 
-/* Titre principal */
+/* Main Title */
 
 .victory-title {
     -fx-font-size: 42px;
@@ -107,7 +115,7 @@
     -fx-text-fill: #00ffff;
 }
 
-/* Nom du gagnant */
+/* Winner's Name */
 
 .winner-label {
     -fx-font-size: 28px;
@@ -115,14 +123,14 @@
     -fx-text-fill: #ff00ff;
 }
 
-/* Message secondaire */
+/* Secondary Message */
 
 .victory-subtitle {
     -fx-font-size: 17px;
     -fx-text-fill: #ffffff;
 }
 
-/* Boutons */
+/* Buttons */
 
 .victory-button {
     -fx-background-color: #111b35;
@@ -141,7 +149,7 @@
 }
 
 /* ========================= */
-/*      MAIN MENU            */
+/*       MAIN MENU            */
 /* ========================= */
 
 .menu-root {
@@ -223,4 +231,3 @@
     -fx-font-size: 10px;
     -fx-text-fill: #647899;
 }
-

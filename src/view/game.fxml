@@ -12,11 +12,8 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
 	<top>
-		<Label fx:id="titleLabel" text="Cyber Connect 4" BorderPane.alignment="CENTER" />
+		<Label fx:id="titleLabel" text="Cyber Connect 4 — Joueur 1" BorderPane.alignment="CENTER" />
 	</top>
-	<bottom>
-		<Button fx:id="restartButton" alignment="CENTER" mnemonicParsing="false" onAction="#restartGame" text="New Game" BorderPane.alignment="CENTER" />
-	</bottom>
 	<center>
 		<HBox prefHeight="100.0" prefWidth="200.0" styleClass="center-container" BorderPane.alignment="CENTER">
 			<children>
@@ -50,4 +47,13 @@
 			</children>
 		</HBox>
 	</center>
+   <bottom>
+    <HBox alignment="CENTER" prefHeight="80.0" spacing="20">
+        <children>
+            <Button fx:id="restartButton" mnemonicParsing="false" onAction="#restartGame" text="New Game" />
+
+            <Button fx:id="backToMenuButton" mnemonicParsing="false" onAction="#backToMenu" text="Back to Menu" />
+        </children>
+    </HBox>
+</bottom>
 </BorderPane>

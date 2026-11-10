@@ -10,20 +10,25 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/26"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.GameController">
 	<top>
-		<Label fx:id="titleLabel" text="Cyber Connect 4" BorderPane.alignment="CENTER" />
+		<Label fx:id="titleLabel" text="Cyber Connect 4 — Joueur 1"
+			BorderPane.alignment="CENTER" />
 	</top>
-	<bottom>
-		<Button fx:id="restartButton" alignment="CENTER" mnemonicParsing="false" onAction="#restartGame" text="New Game" BorderPane.alignment="CENTER" />
-	</bottom>
 	<center>
-		<HBox prefHeight="100.0" prefWidth="200.0" styleClass="center-container" BorderPane.alignment="CENTER">
+		<HBox prefHeight="100.0" prefWidth="200.0"
+			styleClass="center-container" BorderPane.alignment="CENTER">
 			<children>
-				<VBox alignment="CENTER" minWidth="130.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="player-panel">
+				<VBox alignment="CENTER" minWidth="130.0" prefHeight="200.0"
+					prefWidth="100.0" spacing="15.0" styleClass="player-panel">
 					<children>
 						<Label fx:id="player1Label" text="Joueur 1" />
-						<Circle fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+						<Circle fill="#ff1f1f" radius="25.0" stroke="BLACK"
+							strokeType="INSIDE" />
 						<Label styleClass="player-color" text="Red" />
 					</children>
 				</VBox>
@@ -35,19 +40,33 @@
 						<GridPane fx:id="boardGrid" hgap="10.0" vgap="10.0" />
 
 						<!-- Panneau transparent pour dessiner la ligne gagnante -->
-						<Pane fx:id="winningLinePane" mouseTransparent="true" pickOnBounds="false" />
+						<Pane fx:id="winningLinePane" mouseTransparent="true"
+							pickOnBounds="false" />
 
 					</children>
 
 				</StackPane>
-				<VBox alignment="CENTER" minHeight="130.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="player-panel">
+				<VBox alignment="CENTER" minHeight="130.0" prefHeight="200.0"
+					prefWidth="100.0" spacing="15.0" styleClass="player-panel">
 					<children>
 						<Label fx:id="player2Label" text="Joueur 2" />
-						<Circle fill="#fdff1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+						<Circle fill="#fdff1f" radius="25.0" stroke="BLACK"
+							strokeType="INSIDE" />
 						<Label styleClass="player-color" text="Yellow" />
 					</children>
 				</VBox>
 			</children>
 		</HBox>
 	</center>
+	<bottom>
+		<HBox alignment="CENTER" spacing="20" prefHeight="80.0">
+			<children>
+				<Button fx:id="restartButton" styleClass="game-button"
+					onAction="#restartGame" text="New Game" />
+
+				<Button fx:id="backToMenuButton" styleClass="game-button"
+					onAction="#backToMenu" text="Back to Menu" />
+			</children>
+		</HBox>
+	</bottom>
 </BorderPane>

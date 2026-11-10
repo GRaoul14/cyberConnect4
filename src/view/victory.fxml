@@ -16,6 +16,6 @@
 
     <Button onAction="#replay" styleClass="victory-button" text="REJOUER" />
 
-    <Button onAction="#quit" styleClass="victory-button" text="QUITTER" />
+    <Button onAction="#quitGame" styleClass="victory-button" text="QUITTER" />
 
 </VBox>

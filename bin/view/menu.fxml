@@ -5,48 +5,26 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/21"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="controller.MenuController"
-      alignment="CENTER"
-      spacing="25"
-      styleClass="menu-root">
+<VBox alignment="CENTER" spacing="25" styleClass="menu-root" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
 
     <padding>
-        <Insets top="40" right="30" bottom="40" left="30"/>
+        <Insets bottom="40" left="30" right="30" top="40" />
     </padding>
 
-    <Label text="CYBER"
-           styleClass="menu-title"/>
+    <Label styleClass="menu-title" text="CYBER" />
 
-    <Label text="CONNECT 4"
-           styleClass="menu-subtitle"/>
+    <Label styleClass="menu-subtitle" text="CONNECT 4" />
 
-    <Label text="CONNECT • COMPETE • CONQUER"
-           styleClass="menu-tagline"/>
+    <Label styleClass="menu-tagline" text="CONNECT • COMPETE • CONQUER" />
 
-    <VBox alignment="CENTER"
-          spacing="15"
-          maxWidth="300">
+    <VBox alignment="CENTER" maxWidth="300" spacing="15">
 
-        <Button text="JOUER"
-                onAction="#startGame"
-                styleClass="menu-button"
-                maxWidth="Infinity"/>
+        <Button maxWidth="Infinity" onAction="#startGame" styleClass="menu-button" text="PLAY" />
 
-        <Button text="COMMENT JOUER"
-                onAction="#showRules"
-                styleClass="menu-button"
-                maxWidth="Infinity"/>
+        <Button maxWidth="Infinity" onAction="#showRules" styleClass="menu-button" text="HOW TO PLAY" />
 
-        <Button text="QUITTER"
-                onAction="#quitGame"
-                styleClass="menu-button"
-                maxWidth="Infinity"/>
+        <Button maxWidth="Infinity" onAction="#quitGame" styleClass="menu-button" text="EXIT" />
 
     </VBox>
-
-    <Label text="SYSTEM READY // PLAYER 1 VS PLAYER 2"
-           styleClass="menu-footer"/>
 
 </VBox>

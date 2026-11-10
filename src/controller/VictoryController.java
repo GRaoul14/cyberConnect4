@@ -11,46 +11,57 @@ import java.io.IOException;
 
 public class VictoryController {
 
-    @FXML private Label winnerLabel;
+    @FXML
+    private Label winnerLabel;
 
-    @FXML private Label subtitleLabel;
-    @FXML private Label victoryLabel;
+    @FXML
+    private Label subtitleLabel;
+    @FXML
+    private Label victoryLabel;
+    private String gameMode = "PVP";
+    private String difficulty = "MEDIUM";
 
     private int winner;
 
     @FXML
     public void initialize() {
-        // Initialisation de l'écran de victoire
+        // Initialize the victory screen.
     }
 
     public void setWinner(int winner) {
         this.winner = winner;
 
         if (winner == 0) {
-        	victoryLabel.setText("");
-            winnerLabel.setText("MATCH NUL !");
-            subtitleLabel.setText("Personne n'a gagné cette partie.");
+            victoryLabel.setText("");
+            winnerLabel.setText("Draw!");
+            subtitleLabel.setText("No winner");
         } else {
-            winnerLabel.setText("JOUEUR " + winner + " A GAGNÉ !");
-            subtitleLabel.setText("Félicitations pour cette victoire !");
+            winnerLabel.setText("Player " + winner + " has won!");
+            subtitleLabel.setText("CONGRATULATIONS!");
         }
+    }
+
+    public void setGameSettings(String gameMode, String difficulty) {
+        this.gameMode = gameMode;
+        this.difficulty = difficulty;
     }
 
     @FXML
     private void replay() {
-    	SoundManager.playButton();
+        SoundManager.playButton();
         try {
-            FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/view/game.fxml")
-            );
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/game.fxml"));
 
             Parent root = loader.load();
 
-            Scene scene = new Scene(root);
+            GameController gameController = loader.getController();
 
-            scene.getStylesheets().add(
-                getClass().getResource("/view/style.css").toExternalForm()
-            );
+            gameController.setGameMode(gameMode);
+            gameController.setDifficulty(difficulty);
+
+            Scene scene = new Scene(root, 800, 650);
+
+            scene.getStylesheets().add(getClass().getResource("/view/style.css").toExternalForm());
 
             Stage stage = (Stage) winnerLabel.getScene().getWindow();
 
@@ -67,9 +78,7 @@ public class VictoryController {
 
         SoundManager.playButton();
 
-        Stage stage = (Stage) ((javafx.scene.Node) event.getSource())
-                .getScene()
-                .getWindow();
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
 
         stage.close();
     }
